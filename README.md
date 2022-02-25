@@ -53,6 +53,27 @@ $ sudo /etc/init.d/weewx restart
 ## Setup weewx interceptor
 according to https://github.com/matthewwall/weewx-interceptor
 
+### download the interceptor driver
+
+```
+wget -O weewx-interceptor.zip https://github.com/matthewwall/weewx-interceptor/archive/master.zip
+```
+
+### install the driver
+```
+sudo wee_extension --install weewx-interceptor.zip
+```
+
+### configure the driver
+```
+sudo wee_config --reconfigure --driver=user.interceptor --no-prompt
+```
+
+### restart weewx
+```
+sudo /etc/init.d/weewx restart
+```
+
 ## Setup webserver
 ```
 $ sudo apt-get install lighttpd
