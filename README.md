@@ -1,7 +1,11 @@
 # nbngrd_ws
 home weather station web page
 
-# install
+# setup weather station
+
+## setup EC2
+Using free tier AWS
+
 
 # setup weewx
 https://weewx.com/
