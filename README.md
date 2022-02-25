@@ -26,3 +26,6 @@ https://neoground.com/projects/neowx-material
 
 # set timezone to Amsterdam
 $ sudo timedatectl set-timezone Europe/Amsterdam
+
+# docker inspiration
+https://github.com/MrNonoss/WeewX-Docker
