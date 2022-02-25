@@ -7,6 +7,8 @@ home weather station web page
 Using free tier AWS
 
 Launch instance:
+|||
+|-|-|
 | AMI      | Amazon Linux 2 AMI (HVM) - Kernel 5.10 |
 | Instance | t2.micro                               |
 | Storage  | General purpose (gp2) SSD              |
