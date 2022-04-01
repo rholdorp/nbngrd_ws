@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  weewx-core:
+    container_name: weewx-core
+    image: ws_ndbngrd
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      # - ${PWD}/weewx.conf:/home/weewx/weewx.conf
+      - ${PWD}/data/html/:/home/weewx/public_html/
+      - ${PWD}/data/archive:/home/weewx/archive/
+    ports:
+      - "80:80"
+    privileged: true
+    restart: unless-stopped   
+       
